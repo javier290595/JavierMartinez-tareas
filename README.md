@@ -3,7 +3,8 @@
 
 Tareas de la UTM
 
-#TITULOS DE LAS LECCIONES DE VIMTUTOR
+# TITULOS DE LAS LECCIONES DE VIMTUTOR
+
 
 #Leccion 1.1 Mover el cursor
 #Leccion 1.2 salir de vim
