@@ -1,0 +1,445 @@
+{
+  "took" : 409,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 2,
+    "successful" : 2,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 19,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Whlu3XQBQYJHxaytkf-i",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442843461,
+          "index_age" : 2611,
+          "success" : true,
+          "state" : {
+            "phase" : "new",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843249",
+            "phase_time" : "1601442843249",
+            "action" : "complete",
+            "step" : "complete",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442843249"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Wxlu3XQBQYJHxaytkf-i",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442843616,
+          "index_age" : 2766,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "wait-for-indexing-complete",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442843491"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "XBlu3XQBQYJHxaytkf-i",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442843858,
+          "index_age" : 3008,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "wait-for-follow-shard-tasks",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442843674"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "XRlu3XQBQYJHxaytpf9R",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442844780,
+          "index_age" : 437,
+          "success" : true,
+          "state" : {
+            "phase" : "new",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844625",
+            "phase_time" : "1601442844625",
+            "action" : "complete",
+            "step" : "complete",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442844625"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Xhlu3XQBQYJHxaytpf9R",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442844875,
+          "index_age" : 532,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "wait-for-indexing-complete",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442844782"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Xxlu3XQBQYJHxaytpf9R",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442845231,
+          "index_age" : 888,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "wait-for-follow-shard-tasks",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442845040"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "YBlv3XQBQYJHxaytaP-u",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442899616,
+          "index_age" : 55273,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "pause-follower-index",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442899545"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "YRlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442900214,
+          "index_age" : 59364,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "pause-follower-index",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442899930"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Yhlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442900289,
+          "index_age" : 55946,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "close-follower-index",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442900216"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Yxlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442900540,
+          "index_age" : 59690,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "close-follower-index",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442900416"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "ZBlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442900626,
+          "index_age" : 56283,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "unfollow-follower-index",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442900543"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "ZRlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442900720,
+          "index_age" : 59870,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "unfollow-follower-index",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442900630"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Zhlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442901682,
+          "index_age" : 57339,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "open-follower-index",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442900727"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "Zxlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442901770,
+          "index_age" : 60920,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "open-follower-index",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442901686"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "aBlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442901845,
+          "index_age" : 57502,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442844782",
+            "phase_time" : "1601442844782",
+            "action" : "unfollow",
+            "step" : "wait-for-yellow-step",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442901772"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "aRlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442901940,
+          "index_age" : 61090,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442843491",
+            "phase_time" : "1601442843491",
+            "action" : "unfollow",
+            "step" : "wait-for-yellow-step",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442901849"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "ahlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601442902031,
+          "index_age" : 57688,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442302908}",
+            "action_time" : "1601442901943",
+            "phase_time" : "1601442844782",
+            "action" : "rollover",
+            "step" : "check-rollover-ready",
+            "creation_date" : "1601442844343",
+            "step_time" : "1601442901943"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "axlv3XQBQYJHxaytfP8-",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601442902122,
+          "index_age" : 61272,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601442843048}",
+            "action_time" : "1601442902040",
+            "phase_time" : "1601442843491",
+            "action" : "rollover",
+            "step" : "check-rollover-ready",
+            "creation_date" : "1601442840850",
+            "step_time" : "1601442902040"
+          }
+        }
+      },
+      {
+        "_index" : "logstash-2020.09.30-000001",
+        "_type" : "_doc",
+        "_id" : "bBl43XQBQYJHxaythv9i",
+        "_score" : 1.0,
+        "_source" : {
+          "@version" : "1",
+          "host" : "4270aebdea4b",
+          "message" : "hola mundo",
+          "@timestamp" : "2020-09-30T05:24:55.864Z"
+        }
+      }
+    ]
+  }
+}

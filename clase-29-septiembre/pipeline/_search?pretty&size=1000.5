@@ -1,0 +1,313 @@
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 14,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "space:default",
+        "_score" : 1.0,
+        "_source" : {
+          "space" : {
+            "name" : "Default",
+            "description" : "This is your default space!",
+            "color" : "#00bfb3",
+            "disabledFeatures" : [ ],
+            "_reserved" : true
+          },
+          "type" : "space",
+          "references" : [ ],
+          "migrationVersion" : {
+            "space" : "6.6.0"
+          },
+          "updated_at" : "2020-09-30T20:19:03.518Z"
+        }
+      },
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "maps-telemetry:maps-telemetry",
+        "_score" : 1.0,
+        "_source" : {
+          "maps-telemetry" : {
+            "settings" : {
+              "showMapVisualizationTypes" : false
+            },
+            "indexPatternsWithGeoFieldCount" : 0,
+            "mapsTotalCount" : 0,
+            "timeCaptured" : "2020-09-30T20:19:22.045Z",
+            "attributesPerMap" : {
+              "dataSourcesCount" : {
+                "min" : 0,
+                "max" : 0,
+                "avg" : 0
+              },
+              "layersCount" : {
+                "min" : 0,
+                "max" : 0,
+                "avg" : 0
+              },
+              "layerTypesCount" : { },
+              "emsVectorLayersCount" : { }
+            }
+          },
+          "type" : "maps-telemetry",
+          "references" : [ ],
+          "updated_at" : "2020-09-30T20:19:22.045Z"
+        }
+      },
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "config:7.6.2",
+        "_score" : 1.0,
+        "_source" : {
+          "config" : {
+            "buildNum" : 29199
+          },
+          "type" : "config",
+          "references" : [ ],
+          "updated_at" : "2020-09-30T20:19:22.591Z"
+        }
+      },
+      {
+        "_index" : ".kibana_task_manager_1",
+        "_type" : "_doc",
+        "_id" : "task:oss_telemetry-vis_telemetry",
+        "_score" : 1.0,
+        "_source" : {
+          "migrationVersion" : {
+            "task" : "7.6.0"
+          },
+          "task" : {
+            "taskType" : "vis_telemetry",
+            "retryAt" : null,
+            "runAt" : "2020-10-01T00:00:00.000Z",
+            "startedAt" : null,
+            "state" : "{\"runs\":1}",
+            "params" : "{}",
+            "ownerId" : null,
+            "scheduledAt" : "2020-09-30T20:19:13.778Z",
+            "attempts" : 1,
+            "status" : "idle"
+          },
+          "references" : [ ],
+          "updated_at" : "2020-09-30T20:19:16.609Z",
+          "type" : "task"
+        }
+      },
+      {
+        "_index" : ".kibana_task_manager_1",
+        "_type" : "_doc",
+        "_id" : "task:Lens-lens_telemetry",
+        "_score" : 1.0,
+        "_source" : {
+          "migrationVersion" : {
+            "task" : "7.6.0"
+          },
+          "task" : {
+            "taskType" : "lens_telemetry",
+            "retryAt" : null,
+            "runAt" : "2020-10-01T00:00:00.000Z",
+            "startedAt" : null,
+            "state" : "{\"runs\":1,\"byDate\":{},\"suggestionsByDate\":{},\"saved\":{\"saved_30_days\":{},\"saved_overall_total\":0,\"saved_30_days_total\":0,\"saved_90_days_total\":0}}",
+            "params" : "{}",
+            "ownerId" : null,
+            "scheduledAt" : "2020-09-30T20:19:13.778Z",
+            "attempts" : 0,
+            "status" : "idle"
+          },
+          "references" : [ ],
+          "updated_at" : "2020-09-30T20:19:17.500Z",
+          "type" : "task"
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "p-qy4HQBRrBZpuevE76C",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601497598463,
+          "index_age" : 1016,
+          "success" : true,
+          "state" : {
+            "phase" : "new",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"version\":1,\"modified_date_in_millis\":1601497598167}",
+            "action_time" : "1601497598345",
+            "phase_time" : "1601497598345",
+            "action" : "complete",
+            "step" : "complete",
+            "creation_date" : "1601497597447",
+            "step_time" : "1601497598345"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "qOqy4HQBRrBZpuevE76C",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601497598547,
+          "index_age" : 1100,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601497598167}",
+            "action_time" : "1601497598472",
+            "phase_time" : "1601497598472",
+            "action" : "unfollow",
+            "step" : "wait-for-indexing-complete",
+            "creation_date" : "1601497597447",
+            "step_time" : "1601497598472"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "qeqy4HQBRrBZpuevE76C",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "logstash-2020.09.30-000001",
+          "policy" : "logstash-policy",
+          "@timestamp" : 1601497598640,
+          "index_age" : 1193,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"logstash-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601497598167}",
+            "action_time" : "1601497598472",
+            "phase_time" : "1601497598472",
+            "action" : "unfollow",
+            "step" : "wait-for-follow-shard-tasks",
+            "creation_date" : "1601497597447",
+            "step_time" : "1601497598550"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "quqy4HQBRrBZpuevJ74P",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601497600712,
+          "index_age" : 275,
+          "success" : true,
+          "state" : {
+            "phase" : "new",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"version\":1,\"modified_date_in_millis\":1601496957510}",
+            "action_time" : "1601497600598",
+            "phase_time" : "1601497600598",
+            "action" : "complete",
+            "step" : "complete",
+            "creation_date" : "1601497600437",
+            "step_time" : "1601497600598"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "q-qy4HQBRrBZpuevJ74P",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601497600809,
+          "index_age" : 372,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601496957510}",
+            "action_time" : "1601497600714",
+            "phase_time" : "1601497600714",
+            "action" : "unfollow",
+            "step" : "wait-for-indexing-complete",
+            "creation_date" : "1601497600437",
+            "step_time" : "1601497600714"
+          }
+        }
+      },
+      {
+        "_index" : "ilm-history-1-000001",
+        "_type" : "_doc",
+        "_id" : "rOqy4HQBRrBZpuevJ74P",
+        "_score" : 1.0,
+        "_source" : {
+          "index" : "ilm-history-1-000001",
+          "policy" : "ilm-history-ilm-policy",
+          "@timestamp" : 1601497600959,
+          "index_age" : 522,
+          "success" : true,
+          "state" : {
+            "phase" : "hot",
+            "phase_definition" : "{\"policy\":\"ilm-history-ilm-policy\",\"phase_definition\":{\"min_age\":\"0ms\",\"actions\":{\"rollover\":{\"max_size\":\"50gb\",\"max_age\":\"30d\"}}},\"version\":1,\"modified_date_in_millis\":1601496957510}",
+            "action_time" : "1601497600714",
+            "phase_time" : "1601497600714",
+            "action" : "unfollow",
+            "step" : "wait-for-follow-shard-tasks",
+            "creation_date" : "1601497600437",
+            "step_time" : "1601497600879"
+          }
+        }
+      },
+      {
+        "_index" : "logstash-2020.09.30-000001",
+        "_type" : "_doc",
+        "_id" : "reqy4HQBRrBZpuevf75E",
+        "_score" : 1.0,
+        "_source" : {
+          "host" : "926e7130ecb4",
+          "message" : "hola mundo!",
+          "@version" : "1",
+          "@timestamp" : "2020-09-30T20:27:08.340Z"
+        }
+      },
+      {
+        "_index" : "logstash-2020.09.30-000001",
+        "_type" : "_doc",
+        "_id" : "ruqy4HQBRrBZpuevub5t",
+        "_score" : 1.0,
+        "_source" : {
+          "host" : "926e7130ecb4",
+          "message" : "dummy data!",
+          "@version" : "1",
+          "@timestamp" : "2020-09-30T20:27:23.264Z"
+        }
+      },
+      {
+        "_index" : "logstash-2020.09.30-000001",
+        "_type" : "_doc",
+        "_id" : "r-qy4HQBRrBZpuev4r4-",
+        "_score" : 1.0,
+        "_source" : {
+          "host" : "926e7130ecb4",
+          "message" : "trasmitiendo datos!",
+          "@version" : "1",
+          "@timestamp" : "2020-09-30T20:27:33.701Z"
+        }
+      }
+    ]
+  }
+}
